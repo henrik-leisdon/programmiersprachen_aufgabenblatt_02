@@ -26,17 +26,17 @@ Vec2& Vec2::operator-=(Vec2 const& v){
     return *this;
 }
 
-Ved2& Vec2::operator*=(float v){
+Vec2& Vec2::operator*=(float v){
     x = x * v;
     y = y * v;
 
     return *this;
 }
 
-Ved2& Vec2::operator/=(float v){
+Vec2& Vec2::operator/=(float v){
     if (v == 0.0f)
     {
-        std::cout << "divsion by 0 not possible"
+        std::cout << "divsion by 0 not possible";
     }
     else
     {
