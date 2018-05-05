@@ -46,7 +46,37 @@ Vec2& Vec2::operator/=(float v){
     return *this;
 }
 
+Vec2 operator+(Vec2 const & u , Vec2 const & v )
+{
+    return{u.x+v.x,u.y+v.y};
+}
 
+Vec2 operator-(Vec2 const & u, Vec2 const & v)
+{
+    return{u.x-v.x,u.y-v.y};
+}
+
+Vec2 operator*(Vec2 const& v, float s)
+{
+    return{v.x*s,v.y*s};
+}
+
+Vec2 operator/(Vec2 const& v, float s)
+{
+    if(s == 0){
+        std::cout <<"division by 0, impossible";
+        return {v.x,v.y};
+        }
+    else
+    {
+        return{v.x/s,v.y/s};
+    }
+}
+
+Vec2 operator*(float s, Vec2 const& v)
+{
+    return{v.x*s,v.y*s};
+}    
 
 
 
