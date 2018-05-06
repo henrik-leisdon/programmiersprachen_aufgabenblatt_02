@@ -6,6 +6,11 @@ source/CMakeFiles/tests.dir/glew.c.o: ../external/GL/glxew.h
 source/CMakeFiles/tests.dir/glew.c.o: ../external/GL/wglew.h
 source/CMakeFiles/tests.dir/glew.c.o: ../source/glew.c
 
+source/CMakeFiles/tests.dir/circle.cpp.o: ../source/circle.cpp
+source/CMakeFiles/tests.dir/circle.cpp.o: ../source/circle.hpp
+source/CMakeFiles/tests.dir/circle.cpp.o: ../source/color.hpp
+source/CMakeFiles/tests.dir/circle.cpp.o: ../source/vec2.hpp
+
 source/CMakeFiles/tests.dir/mat2.cpp.o: ../source/mat2.cpp
 source/CMakeFiles/tests.dir/mat2.cpp.o: ../source/mat2.hpp
 source/CMakeFiles/tests.dir/mat2.cpp.o: ../source/vec2.hpp

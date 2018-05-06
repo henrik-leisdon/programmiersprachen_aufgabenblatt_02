@@ -8,12 +8,11 @@ class Circle{
 
     public:
         Circle();
-        Circle(float radius_, Vec2 const& mp_, Color const& color_);
-
-        float get_radius()const;
-        Vec2 get_mp()const;
-        Color get_color()const;
-
+        Circle(float radius, Vec2 const& mp, Color const& color);
+        
+        float get_radius() const;
+        Vec2 get_mp() const;
+        Color get_color() const;
         float circumference() const;
 
     private:

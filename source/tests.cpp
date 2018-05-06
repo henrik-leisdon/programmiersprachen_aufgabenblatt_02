@@ -255,24 +255,24 @@ TEST_CASE ("Test_case_2.8_rectangle", "[TasK_2.8_rectangle]")
 
 }
 
-//TEST_CASE ("Test_case_2.8_circle", "[Task 2.8_circle]"){
+TEST_CASE ("Test_case_2.8_circle", "[Task 2.8_circle]"){
     
-//    Circle c1{};
-//    Circle c2{2.0f,{3.0f,1.0f},1.0f};
+    Circle c1{};
+    Circle c2{2.0f,{3.0f,1.0f},1.0f};
   
-//  SECTION("test_constr")
- //   {
- //     REQUIRE(c2.get_radius() == 2.0f);
-//      REQUIRE(c2.get_mp().x == 3.0f);
-//      REQUIRE(c2.get_mp().y == 1.0f);
-//    }
-//  SECTION("test_default_Constr")
-//  {
-//      REQUIRE(c1.get_radius() == 0.0f);
-//      REQUIRE(c1.get_mp().x == 0.0f);
-//      REQUIRE(c1.get_mp().y == 0.0f);
+  SECTION("test_constr")
+    {
+      REQUIRE(c2.get_radius() == 2.0f);
+      REQUIRE(c2.get_mp().x == 3.0f);
+      REQUIRE(c2.get_mp().y == 1.0f);
+    }
+  SECTION("test_default_Constr")
+  {
+      REQUIRE(c1.get_radius() == 0.0f);
+      REQUIRE(c1.get_mp().x == 0.0f);
+      REQUIRE(c1.get_mp().y == 0.0f);
     
 
-//  }  
-//}
+  }  
+}
 

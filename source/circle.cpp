@@ -9,15 +9,15 @@
 
 
 Circle::Circle(): 
-    radius_(0.0f), 
-    mp_({0.0f,0.0f}),
-    color_({0.0f})
+    radius_{0.0f}, 
+    mp_{0.0f,0.0f},
+    color_{0.0f}
     {};
 
-Circle::Circle (float radius_, Vec2 const & mp_, Color const& color):
-    radius_(radius),
-    mp_(mp),
-    color_(color)
+Circle::Circle (float radius, Vec2 const & mp, Color const& color):
+    radius_{radius},
+    mp_{mp},
+    color_{color}
     {};
 
 float Circle::get_radius() const{
