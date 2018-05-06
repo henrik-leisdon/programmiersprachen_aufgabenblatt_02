@@ -14,6 +14,9 @@ class Rectangle{
         Vec2 get_min() const;
         Vec2 get_max() const;
         Color get_color() const;
+        float get_length() const;
+        float get_height() const;
+        float circumference() const;
 
     private:
         Vec2 min_;

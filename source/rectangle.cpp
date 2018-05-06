@@ -32,6 +32,17 @@ Color Rectangle::get_color() const{
     return color_;
 }
 
+float Rectangle::get_length() const{
+    return max_.x-min_.x;
+}
+
+float Rectangle::get_height() const{
+    return max_.y-min_.y;
+}
+
+float Rectangle::circumference() const{
+    return 2*get_length()+2*get_height();
+}
 
 
 #endif

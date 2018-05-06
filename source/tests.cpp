@@ -216,7 +216,8 @@ TEST_CASE ("TEst_Case_2.8_color", "[Task_2.8_color]")
   {
     REQUIRE(blue.r_ == 0.0f);
     REQUIRE(blue.g_ == 0.0f);
-    REQUIRE(blue.b_ == 1.0f);
+    REQUIRE(blue.b_ == 0.0f);
+    //REQUIRE(blue.b_ == 1.0f);
   }
 
 }
@@ -242,6 +243,12 @@ TEST_CASE ("Test_case_2.8_rectangle", "[TasK_2.8_rectangle]")
     REQUIRE(r1.get_max().x == 0.0f);
     REQUIRE(r1.get_max().y == 0.0f);
     
+  }
+
+  SECTION("test_umfang")
+  {
+    REQUIRE(r1.circumference() == 0.0f);
+    REQUIRE(r2.circumference() == 12.0f);
   }
 
 
