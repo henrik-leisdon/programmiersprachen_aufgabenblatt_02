@@ -92,6 +92,10 @@ math.h
 nanovg.h
 ../external/nanovg/src/nanovg.h
 
+/home/thetrippleh/Dokumente/Grive/Uni/git/buw_programmiersprachen/programmiersprachen_aufgabeblatt_02/source/color.hpp
+iostream
+-
+
 /home/thetrippleh/Dokumente/Grive/Uni/git/buw_programmiersprachen/programmiersprachen_aufgabeblatt_02/source/example.cpp
 window.hpp
 /home/thetrippleh/Dokumente/Grive/Uni/git/buw_programmiersprachen/programmiersprachen_aufgabeblatt_02/source/window.hpp
@@ -115,6 +119,22 @@ math.h
 /home/thetrippleh/Dokumente/Grive/Uni/git/buw_programmiersprachen/programmiersprachen_aufgabeblatt_02/source/mat2.hpp
 vec2.hpp
 /home/thetrippleh/Dokumente/Grive/Uni/git/buw_programmiersprachen/programmiersprachen_aufgabeblatt_02/source/vec2.hpp
+
+/home/thetrippleh/Dokumente/Grive/Uni/git/buw_programmiersprachen/programmiersprachen_aufgabeblatt_02/source/rectangle.cpp
+math.h
+-
+vec2.hpp
+/home/thetrippleh/Dokumente/Grive/Uni/git/buw_programmiersprachen/programmiersprachen_aufgabeblatt_02/source/vec2.hpp
+rectangle.hpp
+/home/thetrippleh/Dokumente/Grive/Uni/git/buw_programmiersprachen/programmiersprachen_aufgabeblatt_02/source/rectangle.hpp
+color.hpp
+/home/thetrippleh/Dokumente/Grive/Uni/git/buw_programmiersprachen/programmiersprachen_aufgabeblatt_02/source/color.hpp
+
+/home/thetrippleh/Dokumente/Grive/Uni/git/buw_programmiersprachen/programmiersprachen_aufgabeblatt_02/source/rectangle.hpp
+vec2.hpp
+/home/thetrippleh/Dokumente/Grive/Uni/git/buw_programmiersprachen/programmiersprachen_aufgabeblatt_02/source/vec2.hpp
+color.hpp
+/home/thetrippleh/Dokumente/Grive/Uni/git/buw_programmiersprachen/programmiersprachen_aufgabeblatt_02/source/color.hpp
 
 /home/thetrippleh/Dokumente/Grive/Uni/git/buw_programmiersprachen/programmiersprachen_aufgabeblatt_02/source/vec2.cpp
 vec2.hpp

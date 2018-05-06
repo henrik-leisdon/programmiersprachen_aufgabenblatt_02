@@ -1,14 +1,17 @@
 #ifndef COLOR_HPP
 #define COLOR_HPP
 
+#include<iostream>
+
 struct Color
 {
 
-    Color(float c){
-        if( c <=1 && c>= 0){
-            r_= c;
-            g_= c;
-            b_= c;
+    Color(float input)
+    {
+        if( input <=1.0f && input >= 0.0f){
+            r_= input ;
+            g_= input ;
+            b_= input ;
         }
         else
         {
@@ -17,10 +20,10 @@ struct Color
             b_= 0.0f;
             std::cout << "this color doesn't exist, default color is black.";
         }
-    }
+    };
 
     Color (float r, float g, float b){
-        if(r<=0 && r>=1 && g<=0 && g>=1 && b<=0 && b>=1){
+        if(r<=0.0f && r>=1.0f && g<=0.0f && g>=1.0f && b<=0.0f && b>=1.0f){
             r_=r;
             g_=g;
             b_=b;
@@ -32,9 +35,10 @@ struct Color
             b_=0.0f;
             std::cout << "this color doesn't exist, default color is black.";
         }
-    }
+    };
 
     float r_;
     float g_;
     float b_;
-}
+};
+#endif

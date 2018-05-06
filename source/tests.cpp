@@ -2,6 +2,9 @@
 #include <catch.hpp>
 #include "vec2.hpp"
 #include "mat2.hpp"
+#include "rectangle.hpp"
+#include "circle.hpp"
+#include "color.hpp"
 
 
 int main(int argc, char *argv[])
@@ -196,3 +199,73 @@ TEST_CASE (" describe_Mat2", "[Mat2]")
    
   }
 }
+
+TEST_CASE ("TEst_Case_2.8_color", "[Task_2.8_color]")
+{
+  Color black{0.0f};
+  Color blue{0.0f,0.0f,1.0f};
+  
+  SECTION("default_constuctor")
+  {
+    REQUIRE(black.r_ == 0.0f);
+    REQUIRE(black.g_ == 0.0f);
+    REQUIRE(black.b_ == 0.0f);
+  }
+
+  SECTION("constuctor")
+  {
+    REQUIRE(blue.r_ == 0.0f);
+    REQUIRE(blue.g_ == 0.0f);
+    REQUIRE(blue.b_ == 1.0f);
+  }
+
+}
+
+TEST_CASE ("Test_case_2.8_rectangle", "[TasK_2.8_rectangle]")
+{
+  Rectangle r1{};
+  Rectangle r2{Vec2{2.0f,1.0f},Vec2{4.0f,5.0f}, Color{1.0f,0.0f,0.0f}};
+
+  SECTION("test_constr")
+  {
+    REQUIRE(r2.get_min().x == Approx(2.0f));
+    REQUIRE(r2.get_min().y == 1.0f);
+    REQUIRE(r2.get_max().x == 4.0f);
+    REQUIRE(r2.get_max().y == 5.0f);
+    
+  }
+
+  SECTION("test_default_constr")
+  {
+    REQUIRE(r1.get_min().x == 0.0f);
+    REQUIRE(r1.get_min().y == 0.0f);
+    REQUIRE(r1.get_max().x == 0.0f);
+    REQUIRE(r1.get_max().y == 0.0f);
+    
+  }
+
+
+
+}
+
+//TEST_CASE ("Test_case_2.8_circle", "[Task 2.8_circle]"){
+    
+//    Circle c1{};
+//    Circle c2{2.0f,{3.0f,1.0f},1.0f};
+  
+//  SECTION("test_constr")
+ //   {
+ //     REQUIRE(c2.get_radius() == 2.0f);
+//      REQUIRE(c2.get_mp().x == 3.0f);
+//      REQUIRE(c2.get_mp().y == 1.0f);
+//    }
+//  SECTION("test_default_Constr")
+//  {
+//      REQUIRE(c1.get_radius() == 0.0f);
+//      REQUIRE(c1.get_mp().x == 0.0f);
+//      REQUIRE(c1.get_mp().y == 0.0f);
+    
+
+//  }  
+//}
+
