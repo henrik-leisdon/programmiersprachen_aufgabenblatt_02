@@ -1,6 +1,7 @@
 #define CATCH_CONFIG_RUNNER
 #include <catch.hpp>
 #include "vec2.hpp"
+#include "mat2.hpp"
 
 
 int main(int argc, char *argv[])
@@ -53,7 +54,7 @@ TEST_CASE ( " describe_Vec2" ,"[Vec2]")
 
   }
 
-SECTION("test_operator*="){
+  SECTION("test_operator*="){
     v1 *= 5.0f;
     v3 *= 5.0f;
 
@@ -64,7 +65,7 @@ SECTION("test_operator*="){
 
 
   }
-SECTION("test_operator/="){
+  SECTION("test_operator/="){
     v1 /= 5.0f;
     v3 /= 2.0f;
 
@@ -136,3 +137,4 @@ SECTION("test_operator/="){
 
 }
 
+TEST_CASE (" describe_Mat2", "[Mat2]")
