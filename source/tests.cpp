@@ -138,3 +138,61 @@ TEST_CASE ( " describe_Vec2" ,"[Vec2]")
 }
 
 TEST_CASE (" describe_Mat2", "[Mat2]")
+{
+  Mat2 matrix1 = {};
+  Mat2 matrix2 = {{3.0f,2.0f},{6.0f,1.0f}};
+  Mat2 matrix3 = {{-2.0f,3.0f},{1.0f,5.0f}};
+  Vec2 vektor1 = {2.0f,4.0f};
+  
+
+  SECTION("test_operator*="){
+    matrix1*=matrix3;
+
+    REQUIRE(matrix1.a.x == -2.0f);
+    REQUIRE(matrix1.a.y == 3.0f);
+    REQUIRE(matrix1.b.x == 1.0f);
+    REQUIRE(matrix1.b.y == 5.0f);
+  
+  }
+
+  SECTION("test_operator*_matrix"){
+    Mat2 matrix4 = matrix1*matrix2;
+
+    REQUIRE(matrix4.a.x == 3.0f);
+    REQUIRE(matrix4.a.y == 2.0f);
+    REQUIRE(matrix4.b.x == 6.0f);
+    REQUIRE(matrix4.b.y == 1.0f);
+
+  }
+
+  SECTION("test_operator*_vector"){
+    Vec2 vektor2 = matrix3*vektor1;
+
+    REQUIRE(vektor2.x == 0.0f);
+    REQUIRE(vektor2.y == 26.0f);
+  }
+
+  SECTION("test_determinant"){
+    REQUIRE(matrix2.det() == -9.0f);
+    REQUIRE(matrix1.det() == 1.0f);
+  }
+
+  SECTION("test_inverse"){
+    Mat2 matrix5 = inverse(matrix1);
+
+    REQUIRE(matrix5.a.x == 1.0f);
+    REQUIRE(matrix5.a.y == 0.0f);
+    REQUIRE(matrix5.b.x == 0.0f);
+    REQUIRE(matrix5.b.y == 1.0f);
+  }
+
+  SECTION("test_transposion"){
+    Mat2 matrix6 = make_rotation_mat2((float)M_PI_4);
+
+    REQUIRE(matrix6.a.x == Approx(0.70711f));
+    REQUIRE(matrix6.a.y == Approx(0.70711f));
+    REQUIRE(matrix6.b.x == Approx(-0.70711f));
+    REQUIRE(matrix6.b.y == Approx(0.70711f));
+   
+  }
+}

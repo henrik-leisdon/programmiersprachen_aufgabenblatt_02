@@ -109,6 +109,8 @@ vec2.hpp
 /home/thetrippleh/Dokumente/Grive/Uni/git/buw_programmiersprachen/programmiersprachen_aufgabeblatt_02/source/vec2.hpp
 iostream
 -
+math.h
+-
 
 /home/thetrippleh/Dokumente/Grive/Uni/git/buw_programmiersprachen/programmiersprachen_aufgabeblatt_02/source/mat2.hpp
 vec2.hpp
