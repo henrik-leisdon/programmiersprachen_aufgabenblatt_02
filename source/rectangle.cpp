@@ -8,6 +8,7 @@
 #include "color.hpp"
 
 
+
 Rectangle::Rectangle():
     min_{0.0f,0.0f}, 
     max_{0.0f,0.0f},
@@ -45,4 +46,39 @@ float Rectangle::circumference() const{
 }
 
 
+void Rectangle::draw(Window const& w)
+{
+    Color c = get_color();
+    w.draw_line(get_min().x,get_min().y,get_min().x,get_max().y,c.r_,c.g_,c.b_);
+    w.draw_line(get_min().x,get_max().y,get_max().x,get_max().y,c.r_,c.g_,c.b_);
+    w.draw_line(get_max().x,get_max().y,get_max().x,get_min().y,c.r_,c.g_,c.b_);
+    w.draw_line(get_max().x,get_min().y,get_min().x,get_min().y,c.r_,c.g_,c.b_);
+
+}
+
+void Rectangle::draw(Window const& w, float r,float g,float b)
+{
+    Color c = {r,g,b};
+    w.draw_line(get_min().x,get_min().y,get_min().x,get_max().y,c.r_,c.g_,c.b_);
+    w.draw_line(get_min().x,get_max().y,get_max().x,get_max().y,c.r_,c.g_,c.b_);
+    w.draw_line(get_max().x,get_max().y,get_max().x,get_min().y,c.r_,c.g_,c.b_);
+    w.draw_line(get_max().x,get_min().y,get_min().x,get_min().y,c.r_,c.g_,c.b_);
+
+}
+
+
+
+bool Rectangle::is_inside(Vec2 const& v){
+    if(v.x > min_.x && v.x < max_.x && v.y > min_.y && v.y < max_.y){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+
+
 #endif
+
+
+

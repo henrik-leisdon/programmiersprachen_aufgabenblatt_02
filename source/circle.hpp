@@ -3,6 +3,7 @@
 
 #include "vec2.hpp"
 #include "color.hpp"
+#include "window.hpp"
 
 class Circle{
 
@@ -14,6 +15,11 @@ class Circle{
         Vec2 get_mp() const;
         Color get_color() const;
         float circumference() const;
+
+        void draw(Window const& window);
+        void draw(Window const& window, float r, float g, float b);
+
+        bool is_inside(Vec2 const& v);
 
     private:
 

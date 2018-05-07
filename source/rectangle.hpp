@@ -3,6 +3,8 @@
 
 #include "vec2.hpp"
 #include "color.hpp"
+#include "window.hpp"
+
 
 
 class Rectangle{
@@ -17,6 +19,10 @@ class Rectangle{
         float get_length() const;
         float get_height() const;
         float circumference() const;
+
+       void draw(Window const& w);
+       void draw(Window const& w, float r,float g,float b);
+       bool is_inside(Vec2 const& v);
 
     private:
         Vec2 min_;

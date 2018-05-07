@@ -23,7 +23,7 @@ struct Color
     };
 
     Color (float r, float g, float b){
-        if(r<=0.0f && r>=1.0f && g<=0.0f && g>=1.0f && b<=0.0f && b>=1.0f){
+        if(r>=0.0f && r<=1.0f && g>=0.0f && g<=1.0f && b>=0.0f && b<=1.0f){
             r_=r;
             g_=g;
             b_=b;

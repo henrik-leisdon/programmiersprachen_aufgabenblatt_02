@@ -216,8 +216,8 @@ TEST_CASE ("TEst_Case_2.8_color", "[Task_2.8_color]")
   {
     REQUIRE(blue.r_ == 0.0f);
     REQUIRE(blue.g_ == 0.0f);
-    REQUIRE(blue.b_ == 0.0f);
-    //REQUIRE(blue.b_ == 1.0f);
+    //REQUIRE(blue.b_ == 0.0f);
+    REQUIRE(blue.b_ == 1.0f);
   }
 
 }
@@ -251,7 +251,10 @@ TEST_CASE ("Test_case_2.8_rectangle", "[TasK_2.8_rectangle]")
     REQUIRE(r2.circumference() == 12.0f);
   }
 
-
+  SECTION("test_is_inside"){
+    REQUIRE(r2.is_inside({3.0f,3.0f}));
+    REQUIRE(!r2.is_inside({10.0f,20.0f}));
+  }
 
 }
 
@@ -271,8 +274,18 @@ TEST_CASE ("Test_case_2.8_circle", "[Task 2.8_circle]"){
       REQUIRE(c1.get_radius() == 0.0f);
       REQUIRE(c1.get_mp().x == 0.0f);
       REQUIRE(c1.get_mp().y == 0.0f);
-    
+  }
 
-  }  
+  SECTION("test_circumference")
+  {
+    REQUIRE(c2.circumference() == Approx(12.5664f));
+  }
+
+  SECTION("test_is_inside")
+  {
+    REQUIRE(!c2.is_inside({1.0f,0.0f}));
+    REQUIRE(c2.is_inside({3.0f,1.0f}));
+  }
+    
 }
 

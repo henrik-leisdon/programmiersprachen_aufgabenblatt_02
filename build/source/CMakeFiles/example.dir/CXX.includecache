@@ -107,6 +107,8 @@ vec2.hpp
 /home/thetrippleh/Dokumente/Grive/Uni/git/buw_programmiersprachen/programmiersprachen_aufgabeblatt_02/source/vec2.hpp
 color.hpp
 /home/thetrippleh/Dokumente/Grive/Uni/git/buw_programmiersprachen/programmiersprachen_aufgabeblatt_02/source/color.hpp
+window.hpp
+/home/thetrippleh/Dokumente/Grive/Uni/git/buw_programmiersprachen/programmiersprachen_aufgabeblatt_02/source/window.hpp
 
 /home/thetrippleh/Dokumente/Grive/Uni/git/buw_programmiersprachen/programmiersprachen_aufgabeblatt_02/source/color.hpp
 iostream
@@ -121,6 +123,16 @@ utility
 -
 cmath
 -
+vector
+-
+vec2.hpp
+/home/thetrippleh/Dokumente/Grive/Uni/git/buw_programmiersprachen/programmiersprachen_aufgabeblatt_02/source/vec2.hpp
+rectangle.hpp
+/home/thetrippleh/Dokumente/Grive/Uni/git/buw_programmiersprachen/programmiersprachen_aufgabeblatt_02/source/rectangle.hpp
+circle.hpp
+/home/thetrippleh/Dokumente/Grive/Uni/git/buw_programmiersprachen/programmiersprachen_aufgabeblatt_02/source/circle.hpp
+mat2.hpp
+/home/thetrippleh/Dokumente/Grive/Uni/git/buw_programmiersprachen/programmiersprachen_aufgabeblatt_02/source/mat2.hpp
 
 /home/thetrippleh/Dokumente/Grive/Uni/git/buw_programmiersprachen/programmiersprachen_aufgabeblatt_02/source/mat2.cpp
 mat2.hpp
@@ -151,6 +163,8 @@ vec2.hpp
 /home/thetrippleh/Dokumente/Grive/Uni/git/buw_programmiersprachen/programmiersprachen_aufgabeblatt_02/source/vec2.hpp
 color.hpp
 /home/thetrippleh/Dokumente/Grive/Uni/git/buw_programmiersprachen/programmiersprachen_aufgabeblatt_02/source/color.hpp
+window.hpp
+/home/thetrippleh/Dokumente/Grive/Uni/git/buw_programmiersprachen/programmiersprachen_aufgabeblatt_02/source/window.hpp
 
 /home/thetrippleh/Dokumente/Grive/Uni/git/buw_programmiersprachen/programmiersprachen_aufgabeblatt_02/source/vec2.cpp
 vec2.hpp
